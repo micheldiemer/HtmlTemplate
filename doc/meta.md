@@ -2,7 +2,8 @@
 
 ## SYNTAXE D'UNE BALISE META
 
-Les balises meta doivent apparaître parmi les 512 premiers octets de la page.<br>
+Les balises meta doivent apparaître parmi les 512 premiers octets de la page.
+
 En effet, certains navigateurs ne consultent seulement ces premiers octets pour déterminer l'encodage utilisé pour la page.
 
 ```html
@@ -76,4 +77,4 @@ En effet, certains navigateurs ne consultent seulement ces premiers octets pour 
 - [Mozilla](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta)
 - [AlsaCreations](https://www.alsacreations.com/article/lire/628-balises-meta.html)
 - [Google](https://developers.google.com/search/docs/advanced/crawling/block-indexing?hl=fr)
-- [Meta] https://www.metatags.org/all-meta-tags-overview/
+- [Meta](https://www.metatags.org/all-meta-tags-overview/)

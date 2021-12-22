@@ -18,11 +18,12 @@
 
 Résumé
 
-- `favicon.ico` : en 32x32, pour les anciens navigateurs<br>
-  Si on garde un favicon il sera chargé par défaut par Google Chrome<br>
-  Eventuellement remplacer par `<link rel="icon" href="/icon.png" type="image/png">` pour que Google charge le fichier .svg à la place
-- `icon.svg` : image vectorielle qui se redimensionne facilement<br>
-  Mal supporté par Safari<br>
+- `favicon.ico` : en 32x32, pour les anciens navigateurs  
+  Si on garde un favicon il sera chargé par défaut par Google Chrome  
+  Eventuellement remplacer par `<link rel="icon" href="/icon.png" type="image/png">`  
+  pour que Google charge le fichier .svg à la place
+- `icon.svg` : image vectorielle qui se redimensionne facilement  
+  Mal supporté par Safari  
   Avantage du format SVG : support le `dark mode`
 - `apple-touch-icon` : en 180x180 pour les smartphones et tablettes
 - `manifest` :
@@ -40,13 +41,20 @@ Résumé
   "icons": [
     { "src": "/192.png", "type": "image/png", "sizes": "192x192" },
     { "src": "/512.png", "type": "image/png", "sizes": "512x512" },
-    { "src": "/android-maskable-192.png", "type": "image/png", "sizes": "192x192", "purpose": "maskable" },
+    {
+      "src": "/android-maskable-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    }
   ]
+}
 ```
 
-- [favicon](https://www.alsacreations.com/astuce/lire/59-icon-link-rel-favicon-ico-navigateur.html)<br>
+- [favicon](https://www.alsacreations.com/astuce/lire/59-icon-link-rel-favicon-ico-navigateur.html)
 - [Real Favicon Generator](https://realfavicongenerator.net/)
-  est un outil gratuit en ligne permettant de vérifier et de générer des fichiers "favicon" pour son site web. Bien plus complet que d'autres outils du même acabit, RFG ne se contente pas de la version favicon de bureau mais également des versions pour smartphones et tablettes iOS, Android<br> - Code généré par Real Favicon Generator
+  est un outil gratuit en ligne permettant de vérifier et de générer des fichiers "favicon" pour son site web. Bien plus complet que d'autres outils du même acabit, RFG ne se contente pas de la version favicon de bureau mais également des versions pour smartphones et tablettes iOS, Android
+- Code généré par Real Favicon Generator
 - Le guide pour 2021 :
 - [Details](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
 - [Résumé](https://css-tricks.com/how-to-favicon-in-2021/)
