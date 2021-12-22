@@ -14,7 +14,7 @@ En effet, certains navigateurs ne consultent seulement ces premiers octets pour 
 - `charset` : détermine le jeu de caractère utilisé ; indispensable pour la validation W3C
 - `author` : pas indispensable, mais pratique
 - `description` : utile, à mettre
-- `viewport` : indispensable pour le design responsive ; décrit la partie visible du contenu de la page ; [cf.](https://developer.mozilla.org/fr/docs/Web/HTML/Viewport_meta_tag)
+- `viewport` : indispensable pour le design responsive ; décrit la partie visible du contenu de la page ; [détails](https://developer.mozilla.org/fr/docs/Web/HTML/Viewport_meta_tag)
 - `color-scheme` : thème clair (light) ou sombre (dark) ou normal ; depuis Chrome 81 sorti le 7 avr 2020
 ```html
   <meta charset="utf-8">
@@ -40,9 +40,12 @@ En effet, certains navigateurs ne consultent seulement ces premiers octets pour 
 ```  
   
 ## Balises pour lesquelles une autre technologie existe
-- `robots` : utiliser le fichier `robots.txt` ou l'en-tête HTTP `X-Robots-Tag` à la place
-_ `http-equiv` : remplace une en-tête HTTP. À éviter mais peut être utile si on n'a pas accès à la configuration du serveur.
+- `robots` : : précise comment les moteurs de recherche doivent indexer (ou pas) notre page ; voir aussi `X-Robots-Tag` [détails](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag?hl=fr)
+- `http-equiv` : remplace une en-tête HTTP. À éviter mais peut être utile si on n'a pas accès à la configuration du serveur.
 ```html
+  <!-- indexation totale -->
+  <meta name="robots" content="all">
+  <!-- aucune indexation-->
   <meta name="robots" content="none">
   <!-- exemple de balse meta http-equiv -->
   <meta http-equiv="Content-Language" content="fr-FR" />
@@ -60,4 +63,5 @@ _ `http-equiv` : remplace une en-tête HTTP. À éviter mais peut être utile si
 ## Références
 - [Mozilla](https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta)
 - [AlsaCreations](https://www.alsacreations.com/article/lire/628-balises-meta.html)
-
+- [Google](https://developers.google.com/search/docs/advanced/crawling/block-indexing?hl=fr)
+- [Meta] https://www.metatags.org/all-meta-tags-overview/
