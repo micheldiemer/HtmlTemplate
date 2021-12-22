@@ -95,7 +95,7 @@ function metas(string $author = '', string $description = '', string $viewport =
 
 function createHtml($type = 'basic', $title = 'Page', $lang = 'fr', $author = 'Michel Diemer', $description='HTML / CSS / Javascript', $css = 'default', $js = 'default', $outputFile = '', $outputDir = 'templates/') {
   $html = head($title, $lang);
-  $html .= icon();
+  $html .= icon('img/icons/favicon.png');
 
   if($type != 'basic') {
     $html .= metas($author, $description);
